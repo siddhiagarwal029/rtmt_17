@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatConnect - Engage, Explore, Enjoy</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero-section {
+    background-image: url('https://cdn.le-vpn.com/wp-content/uploads/2020/03/Online-chat-rooms-1200x628-1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e04050;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: -80px auto 0;
+    background-color: #b5dfdd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.about, .features, .cta {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-box .icon {
+    font-size: 2.5em;
+    margin-right: 20px;
+    color: #ff4757;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.btn-secondary {
+    display: block;
+    text-align: center;
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}
+
+.btn-secondary:hover {
+    background-color: #e04050;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+h1 span{
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.nav{
+    background-color: #e04050;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+.nav span{
+    height: 100%;
+    width: 70%;
+    font-size: 1.9rem;
+    padding-top: 1.9%;
+    padding-left: 40%;
+    color: #ffffff;
+
+}
+.nav img{
+    padding-top:0.2% ;
+    padding-left:2%;
+    height: 90%;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://cdn.le-vpn.com/wp-content/uploads/2020/03/Online-chat-rooms-1200x628-1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 span {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e04050;
+}
+
+/* Container for Sections */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: -80px auto 0;
+    background-color: #b5dfdd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+/* About, Features and Call to Action */
+.about, .features, .cta {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-box .icon {
+    font-size: 2.5em;
+    margin-right: 20px;
+    color: #ff4757;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.btn-secondary {
+    display: block;
+    text-align: center;
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}
+
+.btn-secondary:hover {
+    background-color: #e04050;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: #e04050;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav span {
+    width: 70%;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.nav img {
+    height: 80%;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature-box .icon {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .feature-box {
+        padding: 15px;
+    }
+
+    .feature-box .icon {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .nav span {
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://www.chatrooms.site/wp-content/uploads/2023/02/logo-1.png">
+        <span> One of the best web chat platform over internet</span>
+    </div>
+    <div class="hero-section">
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome to <span>Live Chatroom</span></h1>
+                <p>Engage, Explore, Enjoy - Where Conversations Come Alive</p>
+                <a href="{{ url_for('home') }}" class="btn-primary">Join the Conversation</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At Chatrooms, we believe in the power of conversation. Whether you're here to discuss the latest trends, make new friends, or seek advice, our platform is designed to bring people together in a safe and engaging environment.</p>
+        </section>
+
+        <section class="features">
+            <h2>Why Chatroom?</h2>
+            <div class="feature-box">
+                <div class="icon">🔒</div>
+                <h3>Safe & Secure</h3>
+                <p>Your privacy matters to us. We provide robust security features to ensure a safe chatting experience.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">⚡</div>
+                <h3>Instant Access</h3>
+                <p>Jump into the conversation instantly with our easy-to-use platform. No barriers, just pure connection.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">🤝</div>
+                <h3>Community Focused</h3>
+                <p>Our chatrooms are tailored to your interests, making it easy to connect with like-minded individuals.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">🎨</div>
+                <h3>Customizable Profiles</h3>
+                <p>Express yourself with customizable profiles. Let your personality shine through!</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Get Started Today!</h2>
+            <p>Ready to dive into the conversation? Sign up now and become part of a vibrant community. The best chats are just a click away.</p>
+            <a href="{{ url_for('home') }}" class="btn-secondary">Join Now</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chatroom. All rights reserved.</p>
+    </footer>
+</body>
+</html>

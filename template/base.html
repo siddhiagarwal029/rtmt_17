@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://www.chatrooms.site/wp-content/uploads/2023/02/logo-1.png">
+        <span> One of the best web chat platform over internet</span>
+    </div>
+    <div class="center">
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div></div>
+</body>
+</html>
+<style>
+    .nav{
+        background-color: #e04050;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav span{
+        height: 100%;
+        width: 70%;
+        font-size: 1.9rem;
+        padding-top: 1.9%;
+        padding-left: 40%;
+        color: #ffffff;
+    
+    }
+    .nav img{
+        padding-top:0.2% ;
+        padding-left:2%;
+        height: 90%;
+    }
+    .center{
+        position: relative;
+        padding-top: 3%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .chatroom img{
+        height: 5%;
+        width: 20%;
+        display: flex;
+        float: right;
+    }
+    .content{
+        background-color: cornsilk;
+        border-radius: 20%;
+        justify-content: right;
+        padding: 1.5%;
+        display: flex;
+        flex-direction: row;
+        height: 40%;
+        width: 35%;
+
+    }
+    h3{
+        background-color: cyan;
+        width: 100%;
+        padding: 2%;
+        border: 0cm;
+        margin: 0%;
+    }
+    header{
+        margin-top: 0%;
+        padding-top: 0%;
+        height: 30%;
+        width: 20%;display: flex;
+        float: right;
+        
+    }
+    header img{height: 100%;
+    width: 100%;
+    border-radius: 70%;}
+    .inputs button{
+        height: 30px;
+        background-color: springgreen;
+        margin: 0%;
+        padding-left: 1%;
+    }
+    .inputs input{
+        height: 30px;
+    }
+   
+    body{
+        background-image: url(https://c8.alamy.com/comp/2M5CBD5/chatbot-concept-man-chatting-with-chat-bot-vector-illustration-concept-for-business-site-banners-web-2M5CBD5.jpg);
+            
+    }
+    form{
+        padding: 7.5%;
+        font-size: 30px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .join{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    button{
+        background-color:lawngreen;
+    }
+    .create-btn{
+        width: 100%;
+    }
+    .message-box{
+        border-radius: 10px;
+        height: 33rem;
+        display: flex;
+        flex-direction: column;
+        width: 180vw;
+        align-items: stretch;
+        padding: 2%;
+    }
+    .messages{
+        overflow-y: scroll;
+        flex: 1;
+        width: 100%;
+    }
+
+    .inputs{
+        padding: 10px;
+        display: flex;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #message{
+        flex: 1;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .muted{
+        font-size: 10px;
+        color: darkgray;
+    }
+
+
+    </style>
